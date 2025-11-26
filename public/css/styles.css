@@ -1,0 +1,925 @@
+
+:root {
+    --color-primary-dark: #3B2C26; /* Cokelat Sangat Gelap */
+    --color-secondary-medium: #6A4F3F; /* Cokelat Sedang */
+    --color-accent: #A37B5A; /* Cokelat Khaki/Aksen */
+    --color-light-krem: #EAE0D1; /* Krem Muda */
+    --color-text-light: #f5f5f5;
+    --color-text-dark: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text-dark);
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+}
+
+/* ==========================================================================
+   1. Navbar (Header)
+   ========================================================================== */
+header.navbar {
+    position: sticky;
+    top: 20px; /* Jarak dari atas */
+    z-index: 1000;
+    margin: 20px auto 0 auto; 
+    max-width: 80%; 
+    padding: 0;
+    border-radius: 30px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    display: none; 
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-light);
+}
+
+.nav-links a {
+    margin: 0 20px;
+    font-size: 1em;
+    font-weight: 500; 
+}
+.nav-links a:hover {
+    color: var(--color-accent);
+}
+
+
+
+/* Beranda */
+.content-section {
+    background-color: var(--color-light-krem);
+    padding: 100px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.text-content {
+    max-width: 500px;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.welcome-to, .gubuk-senja, .subtitle, .description {
+    color: var(--color-secondary-medium);
+}
+.welcome-to {
+    font-size: 1.2em;
+    margin-bottom: -10px;
+}
+
+.gubuk-senja {
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1em;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.image-content {
+    width: 350px; 
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cafe-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tentang Kami*/
+.about-page-container {
+    background-color: #f5f5f5; 
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.page-title {
+    font-family: serif; 
+    font-size: 2.8em;
+    color: var(--color-secondary-medium);
+    margin-bottom: 70px;
+    display: inline-block;
+    position: relative;
+}
+
+.page-title .underline {
+    position: absolute;
+    bottom: -10px;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background-color: var(--color-secondary-medium);
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; 
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-column {
+    flex-shrink: 0;
+    width: 40%;
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    background-color: #fff; 
+}
+
+.bar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.text-column {
+    flex: 1;
+    padding: 40px; 
+    background-color: var(--color-light-krem);
+    color: var(--color-secondary-medium);
+    line-height: 1.8;
+    text-align: left;
+    border-radius: 10px; 
+}
+
+.section-title {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.philosophy-section {
+    margin-top: 30px;
+}
+
+.philosophy-section .section-subtitle {
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-bottom: 10px;
+}
+
+/* Owner */
+.owner-section {
+    background-color: var(--color-primary-dark); 
+    padding: 80px 5%;
+    color: var(--color-text-light);
+}
+
+.owner-title {
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.owner-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.owner-text {
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.owner-name {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.owner-quote {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #ccc;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.owner-image {
+    flex-shrink: 0;
+    width: 250px; 
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border: 5px solid rgba(255, 255, 255, 0.1); 
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Menu */
+.menu-page-container {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #f5f5f5; 
+}
+
+.menu-header {
+    margin-bottom: 50px;
+}
+
+.menu-title {
+    font-family: serif;
+    font-size: 2.8em;
+    color: var(--color-secondary-medium);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+
+.menu-item {
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-image {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn-more, .btn-more-facilities {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: var(--color-primary-dark); 
+    color: var(--color-text-light);
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.arrow-icon {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+/* Fasilitas */
+.facilities-section {
+    background-color: var(--color-accent); 
+    padding: 80px 5%;
+}
+
+.facilities-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.facilities-image-column {
+    flex-shrink: 0;
+    width: 280px;
+    height: 330px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    transform: rotate(-3deg); 
+}
+
+.facilities-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.facilities-text-column {
+    color: var(--color-primary-dark);
+    text-align: left;
+}
+
+.facilities-title {
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.facilities-title .underline {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-primary-dark);
+}
+
+.facilities-description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Kontak */
+.contact-page-container {
+    padding: 80px 5%;
+    background-color: #f5f5f5;
+}
+
+.contact-title {
+    font-size: 2.2em;
+    font-weight: 600;
+    color: var(--color-secondary-medium);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.contact-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.social-links-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact-card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border-radius: 30px; 
+    color: var(--color-text-light);
+    background-color: var(--color-primary-dark); 
+}
+
+.contact-card i {
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.card-text {
+    text-align: left;
+}
+.card-label {
+    font-size: 0.8em;
+    opacity: 0.8;
+    display: block;
+}
+.card-handle {
+    font-weight: 600;
+}
+
+.details-row {
+    display: grid;
+    grid-template-columns: 1.2fr 2fr; 
+    gap: 30px;
+}
+
+.hours-card {
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-light);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.hours-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.hours-card .fa-clock {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.map-container-wrapper {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-height: 250px;
+}
+
+.map-info-panel {
+    display: none; 
+}
+
+.map-iframe-panel {
+    flex: 1; 
+    height: 100%;
+}
+
+.map-iframe-panel iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Footer */
+.main-footer {
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-light);
+    padding: 60px 5%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    align-items: flex-start; 
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.logo-col {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.price-info {
+    margin-top: 15px;
+}
+
+.price-value {
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--color-accent);
+    line-height: 1;
+}
+
+.column-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff; 
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li a {
+    display: block;
+    padding: 5px 0;
+    color: #ccc;
+    font-size: 0.95em;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .navbar {
+        max-width: 100%;
+        margin-top: 0;
+        border-radius: 0;
+        top: 0;
+    }
+    
+    .content-section,
+    .about-content,
+    .owner-content,
+    .facilities-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .text-content, .text-column {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .image-content, .owner-image {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .owner-image {
+        order: -1; 
+    }
+    
+    .image-column, 
+    .facilities-image-column {
+        width: 80%;
+        max-width: none;
+        margin: 0 auto;
+        transform: rotate(0deg); 
+    }
+    
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .details-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-column {
+        flex: 1 1 45%; 
+        text-align: left;
+    }
+    
+    .logo-col {
+        flex: 1 1 100%;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .logo-col p, .logo-col div {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links a {
+        margin: 0 10px;
+        font-size: 0.9em;
+    }
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+    .social-links-row {
+        flex-direction: column;
+    }
+    .footer-column {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Menu Lengkap */
+
+.full-menu-page {
+    background-color: #f5f5f5;
+}
+
+.full-menu-header {
+    position: relative;
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.menu-header-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header-overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-light);
+}
+
+.header-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header-subtitle {
+    font-size: 1.1em;
+    opacity: 0.8;
+}
+
+.full-menu-grid-container {
+    padding: 0 5%;
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+}
+
+.menu-grid-full {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.menu-card-full {
+    background-color: var(--color-light-krem); 
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-image-placeholder {
+    flex-shrink: 0;
+    width: 80px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-text-content {
+    text-align: left;
+    color: var(--color-secondary-medium);
+}
+
+.item-name {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.item-desc {
+    font-size: 0.85em;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    font-weight: 700;
+    color: var(--color-primary-dark);
+}
+
+/* Responsiveness untuk Halaman Menu Lengkap */
+@media (max-width: 992px) {
+    .menu-grid-full {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header-title {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-grid-full {
+        grid-template-columns: 1fr;
+    }
+    .menu-card-full {
+        flex-direction: row;
+    }
+    .header-title {
+        font-size: 1.5em;
+    }
+    .header-subtitle {
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+
+
+/* Fasilitas Lengkap */
+
+.full-facilities-page {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.full-title {
+    font-size: 3em;
+    margin-bottom: 70px;
+    font-family: serif; 
+    color: var(--color-secondary-medium);
+    display: inline-block;
+    position: relative;
+}
+
+.full-title .underline {
+    position: absolute;
+    bottom: -10px;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background-color: var(--color-secondary-medium);
+}
+
+.facility-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.facility-item {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.facility-image-wrapper {
+    height: 200px;
+    overflow: hidden;
+}
+
+.facility-image-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.facility-item:hover .facility-image-full {
+    transform: scale(1.05);
+}
+
+.facility-text-content {
+    padding: 25px 20px;
+    color: var(--color-primary-dark);
+}
+
+.facility-text-content i {
+    font-size: 2.5em;
+    color: var(--color-accent);
+    margin-bottom: 10px;
+}
+
+.facility-name {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.facility-detail {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* Responsiveness untuk Halaman Fasilitas Lengkap */
+@media (max-width: 992px) {
+    .facility-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .facility-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Transisi Dasar untuk Elemen Interaktif */
+.btn-more, .btn-more-facilities, 
+.contact-card, 
+.menu-item, .menu-card-full, .facility-item {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer; 
+}
+
+
+
+/* Efek Hover (Saat Diarahkan) */
+.btn-more:hover, .btn-more-facilities:hover {
+    background-color: var(--color-accent); 
+    box-shadow: 0 6px 15px rgba(163, 123, 90, 0.4); 
+    transform: translateY(-2px); 
+}
+
+/* Efek Klik/Active (Saat Ditekan) */
+.btn-more:active, .btn-more-facilities:active {
+    transform: translateY(1px) scale(0.98); 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Efek Hover */
+.contact-card:hover {
+    background-color: var(--color-secondary-medium);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Efek Klik/Active */
+.contact-card:active {
+    transform: translateY(1px) scale(0.98);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Efek Hover untuk Kartu Menu (Welcome Page) */
+.menu-item:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Efek Hover untuk Kartu Menu Lengkap */
+.menu-card-full:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Efek Hover untuk Kartu Fasilitas Lengkap */
+.facility-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
