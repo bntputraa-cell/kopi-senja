@@ -10,9 +10,9 @@
 </head>
 <body>
 
-    <div class="container">
-        <header class="navbar">
-            <div class="logo">
+        <div class="container">
+            <header class="navbar">
+                <div class="logo">
                 <span class="logo-text-visible">Gubuk Senja</span>
             </div>
             <nav class="nav-links">
@@ -83,24 +83,6 @@
             </div>
         </div>
 
-        
-
-        <div class="owner-section">
-            <h1 class="owner-title">Pemilik Kopi Gubuk Senja</h1>
-            <div class="owner-content">
-                <div class="owner-text">
-                    <h2 class="owner-name">Muhammad Fulan</h2>
-                    <p class="owner-quote">
-                        "kata kata untuk semua orang
-                        iwhainshn kwnladbnwk wjbakbdbajww"
-                    </p>
-                </div>
-                <div class="owner-image">
-                    <img src="{{ asset('images/screenshot_2025-11-23_110738.png') }}" alt="Muhammad Fulan, Pemilik Kopi Gubuk Senja" class="profile-photo">
-                </div>
-            </div>
-        </div>
-
        
        
         <div class="menu-page-container" id="menu">
@@ -163,7 +145,7 @@
 
             <div class="contact-grid">
                 <div class="social-links-row">
-                    <a href="https://instagram.com/kopi.gubuksenja" target="_blank" class="contact-card instagram-card">
+                    <a href="https://www.instagram.com/kopi.gubuksenja?igsh=OXQyZzNyanhtcHpt" target="_blank" class="contact-card instagram-card">
                         <i class="fa-brands fa-instagram fa-lg"></i>
                         <div class="card-text">
                             <span class="card-label">Instagram</span>
@@ -171,7 +153,7 @@
                         </div>
                     </a>
                     
-                    <a href="https://tiktok.com/@gubuksenja.id" target="_blank" class="contact-card tiktok-card">
+                    <a href="https://www.tiktok.com/@gubuksenja.id?_r=1&_t=ZS-91PbT3Ke42c" target="_blank" class="contact-card tiktok-card">
                         <i class="fa-brands fa-tiktok fa-lg"></i>
                         <div class="card-text">
                             <span class="card-label">Tiktok</span>
@@ -192,9 +174,12 @@
                     <div class="hours-card">
                         <h2 class="hours-title">Jam Buka</h2>
                         <i class="fa-regular fa-clock fa-2xl"></i>
+                        <br>
+                        <br>
                         <p>
                             <span class="time-label">Weekday</span> | <span class="time-range">10.00 - 22.00</span>
                         </p>
+                        <br>
                         <p>
                             <span class="time-label">Weekend</span> | <span class="time-range">10.00 - 00.00</span>
                         </p>
@@ -211,7 +196,7 @@
 
                         <div class="map-iframe-panel">
                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.6683833446547!2d106.84589947545229!3d-6.398019362624527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c279a0d84b2b%3A0xf6a8c642e0225d36!2sGubuk%20Senja%20Coffee%20and%20Eatery!5e0!3m2!1sen!2sid!4v1700685600000!5m2!1sen!2sid"
+                                src="https://www.google.com/maps/place/Kedai+kopi+gubuk+senja/@-6.6769922,106.858957,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69c9002b8b4c6f:0xab2fb02773d2d1!8m2!3d-6.6769922!4d106.8615319!16s%2Fg%2F11xh2bx8tn?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
                                 width="100%" 
                                 height="100%" 
                                 style="border:0;" 

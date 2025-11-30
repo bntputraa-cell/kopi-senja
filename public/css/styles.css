@@ -33,41 +33,66 @@ a {
     transition: color 0.2s;
 }
 
-/* ==========================================================================
-   1. Navbar (Header)
-   ========================================================================== */
+/* Navbar */
+:root {
+    --color-primary-dark: #4F2F28; 
+    --color-text-light: #F0EAD6; 
+    --color-text-link-active: #D9B382;
+}
+
 header.navbar {
-    position: sticky;
-    top: 20px; /* Jarak dari atas */
-    z-index: 1000;
-    margin: 20px auto 0 auto; 
+    position: fixed; 
+    top: 20px; 
+    z-index: 1000; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; 
     max-width: 80%; 
     padding: 0;
     border-radius: 30px; 
     overflow: hidden; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+
+    display: flex;
+    align-items: center; 
+    background-color: var(--color-primary-dark); 
 }
 
+
 .navbar .logo {
-    display: none; 
+    display: flex;
+    align-items: center;
+    padding: 15px 30px; 
 }
+
+.navbar .logo .logo-text-visible {
+    color: var(--color-text-light); 
+    font-size: 1.2em; 
+    font-weight: bold; 
+    letter-spacing: 1px;
+}
+
 
 .nav-links {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 15px 30px;
-    background-color: var(--color-primary-dark);
-    color: var(--color-text-light);
+    justify-content: flex-start; 
+    flex-grow: 1; 
+    padding: 15px 100px; 
+    background-color: transparent;
 }
 
 .nav-links a {
+    color: var(--color-text-light); 
+    text-decoration: none;
     margin: 0 20px;
     font-size: 1em;
     font-weight: 500; 
+    transition: color 0.3s ease; 
 }
-.nav-links a:hover {
-    color: var(--color-accent);
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--color-text-link-active);
 }
 
 
